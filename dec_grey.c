@@ -24,9 +24,9 @@ int fswc_add_image_y16(src_t *src, avgbmp_t *abitmap)
 	
 	while(i-- > 0)
 	{
-		abitmap[0] = *bitmap;
-		abitmap[1] = *bitmap;
-		abitmap[2] = *bitmap;
+		abitmap[0] += *bitmap;
+		abitmap[1] += *bitmap;
+		abitmap[2] += *bitmap;
 		//*(abitmap++) += *bitmap >> 8;
 		//*(abitmap++) += *(bitmap++) >> 8;
 //		abitmap[0] = *bitmap >> 8;
